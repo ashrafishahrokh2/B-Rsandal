@@ -3,9 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>B&R Sandal | تولیدی صندل زنانه</title>
+
+<title>B&R | تولید کننده صندل زنانه، صندل مجلسی، صندل طبی و دخترانه</title>
+
+<meta name="description" content="B&R تولید کننده تخصصی صندل زنانه، صندل مجلسی، صندل طبی و صندل دخترانه با بیش از ۳۵ سال سابقه تولید و صادرات به کشورهای منطقه.">
+<meta name="keywords" content="صندل زنانه, صندل مجلسی زنانه, صندل طبی زنانه, صندل دخترانه, تولیدی صندل زنانه, تولید کننده صندل, صادرات صندل, فروشگاه صندل, B&R Sandal, brsandal">
+<meta name="author" content="B&R Sandal">
 
 <style>
+*{
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
 body{
   margin:0;
   font-family:tahoma, sans-serif;
@@ -13,37 +22,93 @@ body{
   color:#222;
   text-align:center;
 }
-header{
+nav{
+  position:sticky;
+  top:0;
+  z-index:999;
   background:#111;
   color:white;
-  padding:35px 20px;
+  padding:12px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.nav-brand{
+  font-size:22px;
+  font-weight:bold;
+  color:#d6b25e;
+}
+.menu-btn{
+  font-size:28px;
+  cursor:pointer;
+}
+.menu{
+  display:none;
+  background:#111;
+  padding:15px;
+}
+.menu a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  padding:12px;
+  border-bottom:1px solid #333;
+}
+.menu a:hover{
+  color:#d6b25e;
+}
+header{
+  background:linear-gradient(180deg,#111,#2b2118);
+  color:white;
+  padding:40px 20px;
 }
 .logo{
-  width:160px;
+  width:165px;
   max-width:80%;
-  border-radius:22px;
+  border-radius:24px;
   display:block;
   margin:0 auto 18px auto;
 }
 h1{
-  font-size:42px;
+  font-size:44px;
   margin:10px 0;
+  color:#d6b25e;
+}
+h2{
+  color:#2a2118;
+}
+header h2{
+  color:white;
+}
+.hero-text{
+  font-size:17px;
+  line-height:2.1;
+  max-width:720px;
+  margin:15px auto;
+}
+.badges{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px;
+  margin:25px auto 5px;
+  max-width:760px;
+}
+.badge{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(214,178,94,.45);
+  color:white;
+  padding:13px;
+  border-radius:18px;
+  font-size:15px;
 }
 .hero{
   padding:35px 18px;
 }
-.hero h2{
-  font-size:30px;
-}
-.hero p{
-  font-size:17px;
-  line-height:2;
-}
 .main-img{
   width:92%;
   max-width:430px;
-  border-radius:24px;
-  box-shadow:0 12px 35px rgba(0,0,0,.25);
+  border-radius:26px;
+  box-shadow:0 14px 38px rgba(0,0,0,.28);
   margin-top:25px;
 }
 .buttons{
@@ -62,200 +127,209 @@ h1{
 .whatsapp{background:#25D366;}
 .instagram{background:#C13584;}
 .telegram{background:#229ED9;}
-.price{background:#111;}
+.dark{background:#111;}
+.gold{background:#b8913a;}
 
 .section{
   background:white;
   margin:22px;
-  padding:25px 18px;
-  border-radius:22px;
-  box-shadow:0 8px 24px rgba(0,0,0,.06);
+  padding:28px 18px;
+  border-radius:24px;
+  box-shadow:0 8px 24px rgba(0,0,0,.07);
 }
 .section p{
-  line-height:2;
+  line-height:2.1;
   font-size:16px;
+  max-width:850px;
+  margin:auto;
 }
 .gallery{
   display:grid;
   grid-template-columns:1fr;
   gap:18px;
-  margin-top:20px;
+  margin-top:24px;
 }
 .card{
   background:#fff;
   border-radius:22px;
   overflow:hidden;
   box-shadow:0 8px 24px rgba(0,0,0,.12);
-  padding-bottom:15px;
+  padding-bottom:16px;
 }
 .card img{
   width:100%;
   display:block;
 }
 .card h3{
-  margin:14px 0 6px;
+  margin:15px 0 6px;
+  color:#111;
 }
 .card p{
   margin:0 15px 12px;
   font-size:14px;
 }
+.seo-box{
+  text-align:right;
+  line-height:2.1;
+  font-size:15px;
+  color:#444;
+}
 footer{
   background:#111;
   color:white;
-  padding:25px 15px;
+  padding:28px 15px;
   margin-top:25px;
 }
 .small{
   font-size:13px;
   opacity:.8;
 }
+@media(min-width:700px){
+  .gallery{
+    grid-template-columns:repeat(3,1fr);
+  }
+  .badges{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
 </style>
+
+<script>
+function toggleMenu(){
+  var menu = document.getElementById("menu");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+</script>
 </head>
 
 <body>
 
-<header>
-  <img class="logo" src="IMG_8235.jpeg" alt="B&R Logo">
+<nav>
+  <div class="nav-brand">B&R Sandal</div>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</nav>
+
+<div id="menu" class="menu">
+  <a href="#home">خانه</a>
+  <a href="#products">محصولات</a>
+  <a href="#about">درباره ما</a>
+  <a href="#contact">تماس با ما</a>
+  <a href="https://instagram.com/brshoes6">اینستاگرام</a>
+  <a href="https://wa.me/989124848078">واتساپ</a>
+</div>
+
+<header id="home">
+  <img class="logo" src="IMG_8235.jpeg" alt="لوگوی B&R تولید کننده صندل زنانه">
+
   <h1>B&R</h1>
-  <p>تولید کننده صندل زنانه</p>
+  <h2>تولید کننده تخصصی صندل زنانه</h2>
+
+  <p class="hero-text">
+    تولید و عرضه انواع صندل زنانه، صندل مجلسی، صندل طبی و صندل دخترانه
+    برای فروشگاه‌های کفش، صندل و مراکز عرضه پوشاک بانوان در سراسر ایران.
+  </p>
+
+  <div class="badges">
+    <div class="badge">🏭 فعالیت رسمی از سال ۱۳۷۱</div>
+    <div class="badge">🌍 صادرات از سال ۱۳۷۶</div>
+    <div class="badge">👠 بیش از ۳۵ سال تجربه تولید</div>
+    <div class="badge">🚚 صادرات به کشورهای منطقه</div>
+  </div>
 </header>
 
 <section class="hero">
-  <h2>به دنیای B&R خوش آمدید</h2>
+  <h2>کیفیت، طراحی و تجربه در کنار هم</h2>
+
   <p>
-    تولید و عرضه انواع صندل زنانه با طراحی مدرن، کیفیت بالا و مناسب فروش عمده
+    B&R با تکیه بر سابقه تولید، شناخت بازار و طراحی به‌روز، همراه فروشگاه‌هایی است
+    که به دنبال مدل‌های پرفروش، زیبا و قابل اعتماد برای ویترین خود هستند.
   </p>
 
-  <img class="main-img" src="IMG_6009.png" alt="B&R Sandal">
+  <img class="main-img" src="IMG_6009.png" alt="صندل زنانه B&R">
 
   <div class="buttons">
     <a class="btn whatsapp" href="https://wa.me/989124848078">سفارش در واتساپ</a>
     <a class="btn telegram" href="https://t.me/09124848078">تلگرام</a>
     <a class="btn instagram" href="https://instagram.com/brshoes6">اینستاگرام @brshoes6</a>
-    <a class="btn price" href="https://wa.me/989124848078?text=سلام، لطفاً لیست قیمت محصولات B%26R را ارسال کنید.">دریافت لیست قیمت</a>
+    <a class="btn dark" href="tel:09124848078">تماس مستقیم</a>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="products">
   <h2>محصولات منتخب B&R</h2>
-  <p>برای استعلام قیمت، رنگ‌بندی و ثبت سفارش عمده از طریق واتساپ پیام بدهید.</p>
+  <p>
+    برای مشاهده مدل‌های بیشتر، دریافت لیست قیمت، رنگ‌بندی و ثبت سفارش،
+    از طریق واتساپ، تلگرام یا اینستاگرام با ما در ارتباط باشید.
+  </p>
 
   <div class="gallery">
 
-    <div class="card">
-      <img src="IMG_5967.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>استعلام قیمت از طریق واتساپ</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5967.png" alt="صندل زنانه مجلسی B&R"><h3>صندل زنانه B&R</h3><p>مناسب فروشگاه‌های کفش و صندل</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_5969.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>مناسب فروش عمده و فروشگاهی</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5969.png" alt="صندل مجلسی زنانه B&R"><h3>صندل مجلسی زنانه</h3><p>طراحی شیک برای ویترین فروشگاهی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_5976.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>طراحی شیک و پرطرفدار</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5976.png" alt="صندل طبی زنانه B&R"><h3>صندل طبی زنانه</h3><p>ترکیب راحتی، دوام و طراحی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_5977.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>کیفیت تولید B&R</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5977.png" alt="صندل دخترانه B&R"><h3>صندل دخترانه</h3><p>مدل‌های مناسب فروشگاه‌های بانوان</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_5986.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>مناسب سفارش عمده</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5986.png" alt="دمپایی مجلسی زنانه B&R"><h3>دمپایی مجلسی زنانه</h3><p>مناسب استفاده روزمره و مجلسی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_5988.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>تماس برای رنگ‌بندی و سایزبندی</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5988.png" alt="دمپایی طبی زنانه B&R"><h3>دمپایی طبی زنانه</h3><p>استعلام رنگ‌بندی و سایزبندی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_5989.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>مدل فروشگاهی B&R</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5989.png" alt="صندل فروشگاهی زنانه B&R"><h3>مدل فروشگاهی</h3><p>مناسب ویترین و فروشگاه‌های تک‌فروشی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_5990.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>مناسب ویترین فروشگاه</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5990.png" alt="صندل پرفروش زنانه B&R"><h3>مدل پرفروش</h3><p>طراحی‌شده برای بازار حرفه‌ای</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_5991.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>تولید تخصصی صندل زنانه</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5991.png" alt="تولیدی صندل زنانه B&R"><h3>تولید تخصصی</h3><p>کیفیت ثابت و قابل اعتماد</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_5994.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>برای سفارش عمده پیام بدهید</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5994.png" alt="صندل شیک زنانه B&R"><h3>صندل شیک زنانه</h3><p>برای همکاری با فروشگاه‌ها پیام بدهید</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_5995.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>کیفیت، طراحی و راحتی</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_5995.png" alt="صندل راحتی زنانه B&R"><h3>کیفیت، طراحی و راحتی</h3><p>مناسب مشتریان سخت‌پسند</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_6004.jpeg" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>جدیدترین مدل‌های B&R</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_6004.jpeg" alt="جدیدترین مدل صندل B&R"><h3>مدل جدید B&R</h3><p>برای دریافت موجودی پیام بدهید</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
-    <div class="card">
-      <img src="IMG_6174.png" alt="B&R Product">
-      <h3>مدل منتخب B&R</h3>
-      <p>استعلام موجودی و رنگ‌بندی</p>
-      <a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a>
-    </div>
+    <div class="card"><img src="IMG_6174.png" alt="صندل زنانه صادراتی B&R"><h3>مدل صادراتی</h3><p>مناسب بازار داخلی و صادراتی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
 
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="about">
   <h2>درباره B&R</h2>
   <p>
-    B&R تولید کننده تخصصی صندل زنانه با تمرکز بر کیفیت، طراحی، راحتی و رضایت مشتریان است.
-    هدف ما ارائه محصولاتی شیک، کاربردی و مناسب فروش عمده برای فروشگاه‌ها و همکاران می‌باشد.
+    تولیدی B&R یکی از مجموعه‌های باسابقه صنعت صندل زنانه در ایران است که فعالیت رسمی خود را از سال ۱۳۷۱ آغاز کرده است.
+    این مجموعه در سال‌های ابتدایی با نام شرکت «رنگین کمان نوین» و برند RKNCO فعالیت خود را آغاز نمود و طی سال‌ها با تکیه بر کیفیت تولید، شناخت بازار و توسعه مستمر محصولات، جایگاه خود را در بازار ایران تثبیت کرد.
+    در سال ۱۴۰۱ با هدف ایجاد هویتی مدرن‌تر و حضور گسترده‌تر در بازارهای داخلی و بین‌المللی، برند RKNCO به B&R تغییر نام یافت.
+    فعالیت صادراتی این مجموعه از سال ۱۳۷۶ آغاز شده و محصولات تولیدی B&R طی سال‌های گذشته به کشورهای مختلف از جمله گرجستان، ارمنستان، جمهوری آذربایجان، امارات متحده عربی، افغانستان و سایر بازارهای منطقه صادر شده است.
+    امروز B&R با بیش از ۳۵ سال تجربه در تولید صندل زنانه، صندل مجلسی، صندل طبی، صندل دخترانه و محصولات مد روز، تأمین‌کننده فروشگاه‌های کفش، صندل و مراکز عرضه پوشاک بانوان در سراسر ایران می‌باشد.
   </p>
 </section>
 
 <section class="section">
+  <h2>کلمات کلیدی محصولات B&R</h2>
+  <div class="seo-box">
+    صندل زنانه، صندل مجلسی زنانه، صندل طبی زنانه، صندل دخترانه، دمپایی مجلسی زنانه،
+    دمپایی طبی زنانه، تولید کننده صندل زنانه، تولیدی صندل زنانه، صادرات صندل،
+    فروشگاه صندل زنانه، فروشگاه کفش زنانه، مدل جدید صندل زنانه، B&R Sandal.
+  </div>
+</section>
+
+<section class="section" id="contact">
   <h2>ارتباط با ما</h2>
   <p>
-    برای دریافت لیست قیمت، ثبت سفارش عمده و هماهنگی ارسال، از طریق واتساپ یا تماس مستقیم با ما در ارتباط باشید.
+    برای مشاهده مدل‌های بیشتر، دریافت لیست قیمت، استعلام موجودی، رنگ‌بندی و ثبت سفارش،
+    از طریق واتساپ، تلگرام، اینستاگرام یا تماس مستقیم با ما در ارتباط باشید.
   </p>
+
   <a class="btn whatsapp" href="https://wa.me/989124848078">واتساپ مستقیم</a>
+  <a class="btn telegram" href="https://t.me/09124848078">تلگرام</a>
   <a class="btn instagram" href="https://instagram.com/brshoes6">اینستاگرام</a>
+  <a class="btn dark" href="tel:09124848078">تماس مستقیم</a>
 </section>
 
 <footer>
   <p>تماس و واتساپ: 09124848078</p>
   <p>Instagram: @brshoes6</p>
+  <p>Website: brsandal.com</p>
   <p class="small">B&R Sandal © 2026</p>
 </footer>
 
