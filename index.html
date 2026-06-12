@@ -7,9 +7,7 @@
   <title>B&R | تولیدی تخصصی صندل زنانه، مجلسی، طبی و دخترانه</title>
 
   <meta name="description" content="B&R تولید کننده تخصصی صندل زنانه، صندل مجلسی، صندل طبی، دمپایی زنانه و مدل‌های فروشگاهی. فعالیت رسمی از سال ۱۳۷۱، صادرات از سال ۱۳۷۶ و همکاری با فروشگاه‌های کفش، صندل و پوشاک بانوان." />
-  <meta name="keywords" content="B&R, صندل زنانه, صندل مجلسی, صندل طبی, تولیدی صندل, دمپایی زنانه, صندل دخترانه, brsandal" />
   <meta name="robots" content="index, follow" />
-
   <link rel="canonical" href="https://brsandal.com/" />
 
   <meta property="og:title" content="B&R | تولیدی تخصصی صندل زنانه" />
@@ -55,7 +53,7 @@
     }
 
     .top-bar {
-      background: #050505;
+      background: rgba(5, 5, 5, 0.96);
       border-bottom: 1px solid rgba(212, 175, 55, 0.28);
       position: sticky;
       top: 0;
@@ -69,6 +67,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 18px;
+      position: relative;
     }
 
     .brand-mini {
@@ -93,30 +92,52 @@
       letter-spacing: 1px;
     }
 
-    .menu {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-      font-size: 0.92rem;
-      color: #eadca8;
-    }
-
-    .menu a {
-      transition: 0.25s;
-    }
-
-    .menu a:hover {
-      color: #ffffff;
-    }
-
     .menu-btn {
-      display: none;
-      background: transparent;
+      display: block;
+      background: rgba(212, 175, 55, 0.08);
       color: #f5d76e;
       border: 1px solid rgba(212, 175, 55, 0.45);
       border-radius: 12px;
-      padding: 8px 12px;
-      font-size: 1.25rem;
+      padding: 8px 13px;
+      font-size: 1.35rem;
+      cursor: pointer;
+    }
+
+    .menu {
+      position: absolute;
+      top: 82px;
+      right: 0;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      background: rgba(5, 5, 5, 0.98);
+      border: 1px solid rgba(212, 175, 55, 0.38);
+      border-radius: 20px;
+      padding: 14px;
+      color: #eadca8;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.65);
+    }
+
+    .menu.active {
+      display: flex;
+    }
+
+    .menu a {
+      padding: 13px 14px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+      transition: 0.25s;
+      font-size: 0.98rem;
+    }
+
+    .menu a:last-child {
+      border-bottom: none;
+    }
+
+    .menu a:hover {
+      background: rgba(212, 175, 55, 0.08);
+      color: #ffffff;
+      border-radius: 12px;
     }
 
     .hero {
@@ -216,7 +237,7 @@
       border: 1px solid rgba(212, 175, 55, 0.22);
       border-radius: 999px;
       padding: 6px 12px;
-      background: rgba(255,255,255,0.025);
+      background: rgba(255, 255, 255, 0.025);
     }
 
     .hero-card {
@@ -502,33 +523,6 @@
     }
 
     @media (max-width: 900px) {
-      .menu-btn {
-        display: block;
-      }
-
-      .menu {
-        position: absolute;
-        top: 74px;
-        right: 4%;
-        left: 4%;
-        display: none;
-        flex-direction: column;
-        align-items: stretch;
-        background: rgba(5,5,5,0.98);
-        border: 1px solid rgba(212,175,55,0.35);
-        border-radius: 18px;
-        padding: 16px;
-      }
-
-      .menu.active {
-        display: flex;
-      }
-
-      .menu a {
-        padding: 10px;
-        border-bottom: 1px solid rgba(212,175,55,0.12);
-      }
-
       .hero {
         grid-template-columns: 1fr;
         padding-top: 42px;
@@ -552,6 +546,10 @@
     @media (max-width: 560px) {
       .nav {
         height: 68px;
+      }
+
+      .menu {
+        top: 76px;
       }
 
       .brand-mini img {
@@ -613,7 +611,9 @@
         <a href="#why">چرا B&R</a>
         <a href="#export">صادرات</a>
         <a href="#about">درباره ما</a>
-        <a href="#contact">تماس</a>
+        <a href="#contact">تماس با ما</a>
+        <a href="https://wa.me/989124848078">واتساپ سفارش</a>
+        <a href="https://instagram.com/brshoes6">اینستاگرام</a>
       </nav>
     </div>
   </header>
@@ -811,7 +811,7 @@
         <small>WHY B&R</small>
         <h2>چرا فروشگاه‌ها B&R را انتخاب می‌کنند؟</h2>
         <p>
-          برای فروشگاه، فقط زیبایی محصول کافی نیست؛ محصول باید قابل فروش، خوش‌قیمت، خوش‌ساخت و قابل اعتماد باشد.
+          برای فروشگاه، فقط زیبایی محصول کافی نیست؛ محصول باید قابل فروش، خوش‌ساخت و قابل اعتماد باشد.
         </p>
       </div>
 
@@ -837,7 +837,7 @@
         </div>
 
         <div class="why-card">
-          <b>شناخت بازار جنوب و ایران</b>
+          <b>شناخت بازار ایران</b>
           <p>محصولات با توجه به نیاز بازار داخلی، به‌خصوص مناطق گرم و مصرف‌کننده صندل، تولید می‌شوند.</p>
         </div>
 
