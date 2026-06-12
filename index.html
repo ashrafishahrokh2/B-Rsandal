@@ -1,187 +1,959 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>B&R | تولید کننده صندل زنانه، صندل مجلسی، صندل طبی و دخترانه</title>
-<meta name="description" content="B&R تولید کننده تخصصی صندل زنانه، صندل مجلسی، صندل طبی و صندل دخترانه با بیش از ۳۵ سال سابقه تولید و صادرات به کشورهای منطقه.">
+  <title>B&R | تولیدی تخصصی صندل زنانه، مجلسی، طبی و دخترانه</title>
 
-<style>
-*{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;font-family:tahoma,sans-serif;background:#120d0a;color:#2b2118;text-align:center}
-nav{position:sticky;top:0;z-index:999;background:#0b0908;color:white;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #d6b25e}
-.nav-brand{font-size:22px;font-weight:bold;color:#d6b25e}
-.menu-btn{font-size:30px;cursor:pointer;color:#d6b25e}
-.menu{display:none;background:#0b0908;padding:10px 18px}
-.menu a{display:block;color:white;text-decoration:none;padding:14px;border-bottom:1px solid #30251d}
-.menu a:hover{color:#d6b25e}
+  <meta name="description" content="B&R تولید کننده تخصصی صندل زنانه، صندل مجلسی، صندل طبی، دمپایی زنانه و مدل‌های فروشگاهی. فعالیت رسمی از سال ۱۳۷۱، صادرات از سال ۱۳۷۶ و همکاری با فروشگاه‌های کفش، صندل و پوشاک بانوان." />
+  <meta name="keywords" content="B&R, صندل زنانه, صندل مجلسی, صندل طبی, تولیدی صندل, دمپایی زنانه, صندل دخترانه, brsandal" />
+  <meta name="robots" content="index, follow" />
 
-header{background:radial-gradient(circle at top,#5a3b26,#160f0b 62%);color:white;padding:50px 20px 42px}
-.logo{width:170px;max-width:80%;border-radius:26px;display:block;margin:0 auto 20px;box-shadow:0 15px 35px rgba(0,0,0,.45)}
-h1{font-size:48px;margin:10px 0;color:#d6b25e;letter-spacing:2px}
-header h2{color:white;font-size:22px}
-.hero-text{font-size:17px;line-height:2.1;max-width:760px;margin:18px auto;color:#f3e8d8}
-.badges{display:grid;grid-template-columns:1fr;gap:12px;margin:28px auto 0;max-width:780px}
-.badge{background:rgba(255,255,255,.07);border:1px solid rgba(214,178,94,.5);color:#fff;padding:14px;border-radius:20px;font-size:15px}
+  <link rel="canonical" href="https://brsandal.com/" />
 
-.hero{background:#f7efe8;margin:0;padding:38px 18px}
-.hero h2{color:#2b2118;font-size:26px}
-.hero p{line-height:2;font-size:16px;max-width:780px;margin:auto}
-.main-img{width:92%;max-width:430px;border-radius:28px;box-shadow:0 16px 42px rgba(0,0,0,.35);margin-top:28px}
+  <meta property="og:title" content="B&R | تولیدی تخصصی صندل زنانه" />
+  <meta property="og:description" content="تولید کننده صندل زنانه، صندل مجلسی، طبی و دخترانه با سابقه رسمی از سال ۱۳۷۱ و صادرات منطقه‌ای." />
+  <meta property="og:url" content="https://brsandal.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://brsandal.com/IMG_8235.jpeg" />
 
-.btn{display:inline-block;margin:7px;padding:13px 23px;border-radius:30px;color:white;text-decoration:none;font-weight:bold;font-size:15px}
-.whatsapp{background:#1f8f4d}
-.instagram{background:#8f2f5f}
-.telegram{background:#2f5f8f}
-.dark{background:#d6b25e;color:#111}
-.gold{background:#b8913a;color:white}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.section{background:#fffaf6;margin:22px;padding:30px 18px;border-radius:28px;box-shadow:0 10px 28px rgba(0,0,0,.12)}
-.section h2{color:#2b2118;font-size:25px}
-.section p{line-height:2.1;font-size:16px;max-width:880px;margin:auto;color:#3b3028}
-.gallery{display:grid;grid-template-columns:1fr;gap:20px;margin-top:26px}
-.card{background:white;border-radius:24px;overflow:hidden;box-shadow:0 10px 28px rgba(0,0,0,.14);padding-bottom:18px;border:1px solid #ead8bd}
-.card img{width:100%;display:block}
-.card h3{margin:16px 0 8px;color:#111;font-size:19px}
-.card p{margin:0 15px 13px;font-size:14px;color:#55463b}
-.about-text{text-align:right}
-footer{background:#0b0908;color:white;padding:30px 15px;margin-top:25px;border-top:1px solid #d6b25e}
-footer p{margin:8px 0}
-.small{font-size:13px;opacity:.75}
-@media(min-width:700px){
-.gallery{grid-template-columns:repeat(3,1fr)}
-.badges{grid-template-columns:repeat(2,1fr)}
-}
-</style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-<script>
-function toggleMenu(){
-  var menu=document.getElementById("menu");
-  menu.style.display=menu.style.display==="block"?"none":"block";
-}
-</script>
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(212, 175, 55, 0.18), transparent 35%),
+        linear-gradient(180deg, #070707 0%, #111111 45%, #050505 100%);
+      color: #f7f1df;
+      line-height: 1.9;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    .top-bar {
+      background: #050505;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.28);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand-mini {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mini img {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid #d4af37;
+      box-shadow: 0 0 18px rgba(212, 175, 55, 0.35);
+    }
+
+    .brand-mini span {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #f5d76e;
+      letter-spacing: 1px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 0.92rem;
+      color: #eadca8;
+    }
+
+    .menu a {
+      transition: 0.25s;
+    }
+
+    .menu a:hover {
+      color: #ffffff;
+    }
+
+    .menu-btn {
+      display: none;
+      background: transparent;
+      color: #f5d76e;
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      border-radius: 12px;
+      padding: 8px 12px;
+      font-size: 1.25rem;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 42px;
+      align-items: center;
+      padding: 66px 0 54px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid rgba(212, 175, 55, 0.34);
+      color: #f6d86d;
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 0.88rem;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 5.6rem);
+      color: #f6d86d;
+      line-height: 1.15;
+      text-shadow: 0 0 28px rgba(212, 175, 55, 0.28);
+      margin-bottom: 18px;
+      letter-spacing: -1px;
+    }
+
+    .hero h2 {
+      font-size: clamp(1.25rem, 3vw, 2.2rem);
+      color: #ffffff;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .hero p {
+      color: #d7cfae;
+      font-size: 1.02rem;
+      max-width: 680px;
+      margin-bottom: 28px;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.25s;
+      border: 1px solid transparent;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #f7d66b, #b88918);
+      color: #080808;
+      box-shadow: 0 12px 30px rgba(212, 175, 55, 0.24);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 38px rgba(212, 175, 55, 0.34);
+    }
+
+    .btn-dark {
+      border-color: rgba(212, 175, 55, 0.42);
+      color: #f6d86d;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .btn-dark:hover {
+      background: rgba(212, 175, 55, 0.1);
+    }
+
+    .trust-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: #cfc39d;
+      font-size: 0.92rem;
+    }
+
+    .trust-line span {
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      border-radius: 999px;
+      padding: 6px 12px;
+      background: rgba(255,255,255,0.025);
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 16px;
+      border-radius: 30px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)),
+        radial-gradient(circle at top, rgba(212, 175, 55, 0.22), transparent 42%);
+      border: 1px solid rgba(212, 175, 55, 0.32);
+      box-shadow: 0 30px 90px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+
+    .hero-card img {
+      border-radius: 24px;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+
+    .hero-label {
+      position: absolute;
+      right: 28px;
+      bottom: 28px;
+      left: 28px;
+      background: rgba(0,0,0,0.68);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 18px;
+      padding: 14px 16px;
+      color: #fff5c7;
+      backdrop-filter: blur(8px);
+      font-size: 0.95rem;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 18px auto 72px;
+    }
+
+    .stat {
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
+      border: 1px solid rgba(212, 175, 55, 0.26);
+      border-radius: 22px;
+      padding: 22px 16px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      color: #f6d86d;
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+
+    .stat span {
+      color: #d3c69d;
+      font-size: 0.92rem;
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .section-head small {
+      color: #f6d86d;
+      display: block;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.6rem, 4vw, 2.8rem);
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .section-head p {
+      color: #cfc39d;
+      max-width: 760px;
+      margin: auto;
+      font-size: 0.98rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .product {
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      border-radius: 24px;
+      overflow: hidden;
+      transition: 0.25s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      border-color: rgba(246, 216, 109, 0.58);
+      box-shadow: 0 24px 60px rgba(0,0,0,0.36);
+    }
+
+    .product img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #111;
+    }
+
+    .product-body {
+      padding: 18px;
+    }
+
+    .product h3 {
+      color: #fff4bd;
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+    }
+
+    .product p {
+      color: #bfb48e;
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
+
+    .mini-link {
+      display: inline-flex;
+      color: #080808;
+      background: #f6d86d;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      padding: 26px;
+      border-radius: 24px;
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(212, 175, 55, 0.22);
+    }
+
+    .why-card b {
+      display: block;
+      color: #f6d86d;
+      font-size: 1.12rem;
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      color: #cfc39d;
+      font-size: 0.95rem;
+    }
+
+    .export-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+      background:
+        radial-gradient(circle at left, rgba(212,175,55,0.18), transparent 35%),
+        linear-gradient(135deg, rgba(255,255,255,0.075), rgba(255,255,255,0.025));
+      border: 1px solid rgba(212,175,55,0.28);
+      border-radius: 30px;
+      padding: 34px;
+    }
+
+    .export-box h2 {
+      color: #ffffff;
+      font-size: clamp(1.55rem, 4vw, 2.6rem);
+      margin-bottom: 14px;
+    }
+
+    .export-box p {
+      color: #d4c8a0;
+      margin-bottom: 18px;
+    }
+
+    .country-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .country-list span {
+      border-radius: 999px;
+      border: 1px solid rgba(212,175,55,0.34);
+      color: #f6d86d;
+      padding: 8px 13px;
+      background: rgba(0,0,0,0.26);
+      font-size: 0.9rem;
+    }
+
+    .about {
+      background: #090909;
+      border-top: 1px solid rgba(212, 175, 55, 0.18);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+    }
+
+    .about-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      color: #d7cda7;
+      font-size: 1rem;
+    }
+
+    .about-box strong {
+      color: #f6d86d;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .contact-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
+      border: 1px solid rgba(212,175,55,0.25);
+      border-radius: 22px;
+      padding: 22px 16px;
+      text-align: center;
+      transition: 0.25s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(246,216,109,0.58);
+    }
+
+    .contact-card b {
+      color: #f6d86d;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .contact-card span {
+      color: #d7cda7;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #030303;
+      border-top: 1px solid rgba(212,175,55,0.22);
+      padding: 30px 0;
+      text-align: center;
+      color: #a99d78;
+      font-size: 0.9rem;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      left: 18px;
+      bottom: 18px;
+      z-index: 999;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.65rem;
+      font-weight: 900;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+    }
+
+    @media (max-width: 900px) {
+      .menu-btn {
+        display: block;
+      }
+
+      .menu {
+        position: absolute;
+        top: 74px;
+        right: 4%;
+        left: 4%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        background: rgba(5,5,5,0.98);
+        border: 1px solid rgba(212,175,55,0.35);
+        border-radius: 18px;
+        padding: 16px;
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .menu a {
+        padding: 10px;
+        border-bottom: 1px solid rgba(212,175,55,0.12);
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 42px;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid,
+      .export-box,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .nav {
+        height: 68px;
+      }
+
+      .brand-mini img {
+        width: 42px;
+        height: 42px;
+      }
+
+      .brand-mini span {
+        font-size: 1.1rem;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 34px 0 40px;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+
+      .cta-row {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .stats,
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 54px 0;
+      }
+
+      .export-box {
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <div class="nav-brand">B&R Sandal</div>
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
-</nav>
+  <header class="top-bar">
+    <div class="container nav">
+      <a href="#home" class="brand-mini">
+        <img src="IMG_8235.jpeg" alt="لوگوی برند B&R تولیدی صندل زنانه">
+        <span>B&R</span>
+      </a>
 
-<div id="menu" class="menu">
-  <a href="#home">خانه</a>
-  <a href="#products">محصولات</a>
-  <a href="#about">درباره ما</a>
-  <a href="#contact">تماس با ما</a>
-  <a href="https://instagram.com/brshoes6">اینستاگرام</a>
-  <a href="https://wa.me/989124848078">واتساپ</a>
-</div>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-<header id="home">
-  <img class="logo" src="IMG_8235.jpeg" alt="لوگوی B&R تولید کننده صندل زنانه">
+      <nav class="menu" id="menu">
+        <a href="#home">خانه</a>
+        <a href="#products">محصولات</a>
+        <a href="#why">چرا B&R</a>
+        <a href="#export">صادرات</a>
+        <a href="#about">درباره ما</a>
+        <a href="#contact">تماس</a>
+      </nav>
+    </div>
+  </header>
 
-  <h1>B&R</h1>
-  <h2>تولید کننده تخصصی صندل زنانه</h2>
+  <main id="home">
+    <div class="container hero">
+      <div>
+        <div class="eyebrow">تولیدی تخصصی صندل زنانه از سال ۱۳۷۱</div>
 
-  <p class="hero-text">
-    تولید و عرضه انواع صندل زنانه، صندل مجلسی، صندل طبی و صندل دخترانه
-    برای فروشگاه‌های کفش، صندل و مراکز عرضه پوشاک بانوان در سراسر ایران.
-  </p>
+        <h1>B&R</h1>
 
-  <div class="badges">
-    <div class="badge">🏭 فعالیت رسمی از سال ۱۳۷۱</div>
-    <div class="badge">🌍 صادرات از سال ۱۳۷۶</div>
-    <div class="badge">👠 بیش از ۳۵ سال تجربه تولید</div>
-    <div class="badge">🚚 صادرات به کشورهای منطقه</div>
-  </div>
-</header>
+        <h2>ویترین حرفه‌ای صندل زنانه، مجلسی، طبی و دخترانه</h2>
 
-<section class="hero">
-  <h2>کیفیت، طراحی و تجربه در کنار هم</h2>
-  <p>
-    B&R همراه فروشگاه‌هایی است که به دنبال مدل‌های پرفروش، زیبا و قابل اعتماد برای ویترین خود هستند.
-  </p>
+        <p>
+          B&R برند تخصصی تولید صندل و دمپایی زنانه با تمرکز بر طراحی شیک، راحتی، کیفیت ساخت و همکاری با فروشگاه‌های کفش، صندل و مراکز عرضه پوشاک بانوان در سراسر ایران و بازارهای منطقه‌ای است.
+        </p>
 
-  <img class="main-img" src="IMG_6009.png" alt="صندل زنانه B&R">
+        <div class="cta-row">
+          <a class="btn btn-gold" href="https://wa.me/989124848078">استعلام قیمت و سفارش در واتساپ</a>
+          <a class="btn btn-dark" href="#products">مشاهده مدل‌ها</a>
+        </div>
 
-  <div class="buttons">
-    <a class="btn whatsapp" href="https://wa.me/989124848078">سفارش در واتساپ</a>
-    <a class="btn telegram" href="https://t.me/09124848078">تلگرام</a>
-    <a class="btn instagram" href="https://instagram.com/brshoes6">اینستاگرام @brshoes6</a>
-    <a class="btn dark" href="tel:09124848078">تماس مستقیم</a>
-  </div>
-</section>
+        <div class="trust-line">
+          <span>تولید تخصصی</span>
+          <span>مناسب فروشگاه‌ها</span>
+          <span>مدل‌های زنانه و دخترانه</span>
+          <span>سابقه صادراتی</span>
+        </div>
+      </div>
 
-<section class="section" id="products">
-  <h2>محصولات منتخب B&R</h2>
-  <p>
-    برای مشاهده مدل‌های بیشتر، دریافت لیست قیمت، رنگ‌بندی و ثبت سفارش،
-    از طریق واتساپ، تلگرام یا اینستاگرام با ما در ارتباط باشید.
-  </p>
+      <div class="hero-card">
+        <img src="IMG_6009.png" alt="صندل زنانه لوکس برند B&R">
+        <div class="hero-label">
+          طراحی برای فروشگاه‌هایی که به کیفیت، ظاهر و اعتماد مشتری اهمیت می‌دهند.
+        </div>
+      </div>
+    </div>
 
-  <div class="gallery">
+    <div class="container stats">
+      <div class="stat">
+        <strong>۱۳۷۱</strong>
+        <span>شروع فعالیت رسمی تولید</span>
+      </div>
+      <div class="stat">
+        <strong>۱۳۷۶</strong>
+        <span>شروع فعالیت صادراتی</span>
+      </div>
+      <div class="stat">
+        <strong>۳۵+</strong>
+        <span>سال تجربه در صنعت کفش و صندل</span>
+      </div>
+      <div class="stat">
+        <strong>B&R</strong>
+        <span>ادامه مسیر برند RKNCO از سال ۱۴۰۱</span>
+      </div>
+    </div>
+  </main>
 
-    <div class="card"><img src="IMG_5967.png" alt="صندل مجلسی زنانه B&R"><h3>صندل مجلسی زنانه</h3><p>مناسب فروشگاه‌های کفش و صندل</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+  <section id="products">
+    <div class="container">
+      <div class="section-head">
+        <small>PRODUCTS</small>
+        <h2>منتخب مدل‌های B&R</h2>
+        <p>
+          بخشی از مدل‌های تولیدی B&R برای فروشگاه‌های کفش، صندل و پوشاک بانوان. برای مشاهده مدل‌های بیشتر و دریافت قیمت، از طریق واتساپ یا دایرکت پیام دهید.
+        </p>
+      </div>
 
-    <div class="card"><img src="IMG_5969.png" alt="صندل طبی مجلسی B&R"><h3>صندل طبی مجلسی</h3><p>ترکیب راحتی، زیبایی و طراحی فروشگاهی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+      <div class="products">
 
-    <div class="card"><img src="IMG_5976.png" alt="صندل دخترانه B&R"><h3>صندل دخترانه</h3><p>مدل مناسب فروشگاه‌های بانوان و دخترانه</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5967.png" alt="صندل مجلسی زنانه B&R">
+          <div class="product-body">
+            <h3>صندل مجلسی زنانه</h3>
+            <p>مدل مناسب ویترین فروشگاهی، مهمانی و استایل مجلسی.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-    <div class="card"><img src="IMG_5977.png" alt="صندل طبی زنانه B&R"><h3>صندل طبی زنانه</h3><p>راحت، خوش‌فرم و مناسب استفاده روزمره</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5969.png" alt="صندل طبی مجلسی B&R">
+          <div class="product-body">
+            <h3>صندل طبی مجلسی</h3>
+            <p>ترکیب راحتی و ظاهر شیک برای مشتریان سخت‌پسند.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-    <div class="card"><img src="IMG_5986.png" alt="دمپایی مجلسی زنانه B&R"><h3>دمپایی مجلسی زنانه</h3><p>مناسب استفاده روزمره و مجلسی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5976.png" alt="صندل دخترانه B&R">
+          <div class="product-body">
+            <h3>صندل دخترانه</h3>
+            <p>طراحی ظریف و فروشگاهی برای گروه سنی دخترانه.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-    <div class="card"><img src="IMG_5988.png" alt="دمپایی طبی زنانه B&R"><h3>دمپایی طبی زنانه</h3><p>استعلام رنگ‌بندی و سایزبندی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5977.png" alt="صندل طبی زنانه B&R">
+          <div class="product-body">
+            <h3>صندل طبی زنانه</h3>
+            <p>مناسب استفاده روزمره با ظاهر مرتب و قابل فروش.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-    <div class="card"><img src="IMG_5989.png" alt="صندل فروشگاهی زنانه B&R"><h3>مدل فروشگاهی</h3><p>مناسب ویترین و فروشگاه‌های تک‌فروشی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5986.png" alt="دمپایی مجلسی زنانه B&R">
+          <div class="product-body">
+            <h3>دمپایی مجلسی زنانه</h3>
+            <p>مدل شیک برای فروشگاه‌هایی که تنوع لوکس می‌خواهند.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-    <div class="card"><img src="IMG_5990.png" alt="صندل پرفروش زنانه B&R"><h3>مدل پرفروش</h3><p>طراحی‌شده برای بازار حرفه‌ای</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5988.png" alt="دمپایی طبی زنانه B&R">
+          <div class="product-body">
+            <h3>دمپایی طبی زنانه</h3>
+            <p>انتخاب کاربردی برای فروش روزانه و مصرف راحت.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-    <div class="card"><img src="IMG_5991.png" alt="تولیدی صندل زنانه B&R"><h3>تولید تخصصی</h3><p>کیفیت ثابت و قابل اعتماد</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5989.png" alt="مدل فروشگاهی صندل زنانه B&R">
+          <div class="product-body">
+            <h3>مدل فروشگاهی</h3>
+            <p>مناسب چیدمان ویترین و فروشگاه‌های پرتردد.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-    <div class="card"><img src="IMG_5994.png" alt="صندل شیک زنانه B&R"><h3>صندل شیک زنانه</h3><p>برای همکاری با فروشگاه‌ها پیام بدهید</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5990.png" alt="مدل پرفروش صندل زنانه B&R">
+          <div class="product-body">
+            <h3>مدل پرفروش</h3>
+            <p>انتخاب مناسب برای فروشگاه‌هایی که فروش سریع می‌خواهند.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-    <div class="card"><img src="IMG_5995.png" alt="صندل راحتی زنانه B&R"><h3>کیفیت، طراحی و راحتی</h3><p>مناسب مشتریان سخت‌پسند</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5991.png" alt="تولید تخصصی صندل زنانه B&R">
+          <div class="product-body">
+            <h3>تولید تخصصی</h3>
+            <p>تمرکز بر کیفیت ساخت، ظاهر تجاری و قابلیت فروش.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-    <div class="card"><img src="IMG_6004.jpeg" alt="جدیدترین مدل صندل B&R"><h3>مدل جدید B&R</h3><p>برای دریافت موجودی پیام بدهید</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5994.png" alt="صندل شیک زنانه B&R">
+          <div class="product-body">
+            <h3>صندل شیک زنانه</h3>
+            <p>مدلی مناسب برای مشتریانی که ظاهر خاص می‌خواهند.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-    <div class="card"><img src="IMG_6174.png" alt="صندل زنانه صادراتی B&R"><h3>مدل صادراتی</h3><p>مناسب بازار داخلی و صادراتی</p><a class="btn whatsapp" href="https://wa.me/989124848078">استعلام قیمت</a></div>
+        <article class="product">
+          <img src="IMG_5995.png" alt="صندل زنانه باکیفیت B&R">
+          <div class="product-body">
+            <h3>کیفیت، طراحی و راحتی</h3>
+            <p>سه اصل اصلی در تولید مدل‌های برند B&R.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-  </div>
-</section>
+        <article class="product">
+          <img src="IMG_6004.jpeg" alt="مدل جدید صندل زنانه B&R">
+          <div class="product-body">
+            <h3>مدل جدید B&R</h3>
+            <p>طراحی تازه برای ویترین‌های به‌روز و خاص‌پسند.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-<section class="section" id="about">
-  <h2>درباره B&R</h2>
-  <p class="about-text">
-    تولیدی B&R یکی از مجموعه‌های باسابقه صنعت صندل زنانه در ایران است که فعالیت رسمی خود را از سال ۱۳۷۱ آغاز کرده است.
-    این مجموعه در سال‌های ابتدایی با نام شرکت «رنگین کمند نوین» و برند RKNCO فعالیت خود را آغاز نمود و طی سال‌ها با تکیه بر کیفیت تولید، شناخت بازار و توسعه مستمر محصولات، جایگاه خود را در بازار ایران تثبیت کرد.
-    در سال ۱۴۰۱ با هدف ایجاد هویتی مدرن‌تر و حضور گسترده‌تر در بازارهای داخلی و بین‌المللی، برند RKNCO به B&R تغییر نام یافت.
-    فعالیت صادراتی این مجموعه از سال ۱۳۷۶ آغاز شده و محصولات تولیدی B&R طی سال‌های گذشته به کشورهای مختلف از جمله گرجستان، ارمنستان، جمهوری آذربایجان، امارات متحده عربی، افغانستان و سایر بازارهای منطقه صادر شده است.
-    امروز B&R با بیش از ۳۵ سال تجربه در تولید صندل زنانه، صندل مجلسی، صندل طبی، صندل دخترانه و محصولات مد روز، تأمین‌کننده فروشگاه‌های کفش، صندل و مراکز عرضه پوشاک بانوان در سراسر ایران می‌باشد.
-  </p>
-</section>
+        <article class="product">
+          <img src="IMG_6174.png" alt="مدل صادراتی صندل زنانه B&R">
+          <div class="product-body">
+            <h3>مدل صادراتی</h3>
+            <p>مناسب بازارهای منطقه‌ای و سفارش‌های فروشگاهی.</p>
+            <a class="mini-link" href="https://wa.me/989124848078">استعلام قیمت</a>
+          </div>
+        </article>
 
-<section class="section" id="contact">
-  <h2>ارتباط با ما</h2>
-  <p>
-    برای مشاهده مدل‌های بیشتر، دریافت لیست قیمت، استعلام موجودی، رنگ‌بندی و ثبت سفارش،
-    از طریق واتساپ، تلگرام، اینستاگرام یا تماس مستقیم با ما در ارتباط باشید.
-  </p>
+      </div>
+    </div>
+  </section>
 
-  <a class="btn whatsapp" href="https://wa.me/989124848078">واتساپ مستقیم</a>
-  <a class="btn telegram" href="https://t.me/09124848078">تلگرام</a>
-  <a class="btn instagram" href="https://instagram.com/brshoes6">اینستاگرام</a>
-  <a class="btn dark" href="tel:09124848078">تماس مستقیم</a>
-</section>
+  <section id="why">
+    <div class="container">
+      <div class="section-head">
+        <small>WHY B&R</small>
+        <h2>چرا فروشگاه‌ها B&R را انتخاب می‌کنند؟</h2>
+        <p>
+          برای فروشگاه، فقط زیبایی محصول کافی نیست؛ محصول باید قابل فروش، خوش‌قیمت، خوش‌ساخت و قابل اعتماد باشد.
+        </p>
+      </div>
 
-<footer>
-  <p>تماس و واتساپ: 09124848078</p>
-  <p>Instagram: @brshoes6</p>
-  <p>Website: brsandal.com</p>
-  <p class="small">B&R Sandal © 2026</p>
-</footer>
+      <div class="why-grid">
+        <div class="why-card">
+          <b>تجربه تولید واقعی</b>
+          <p>فعالیت رسمی از سال ۱۳۷۱ باعث شده B&R بازار، سلیقه مشتری و نیاز فروشگاه‌ها را دقیق‌تر بشناسد.</p>
+        </div>
+
+        <div class="why-card">
+          <b>طراحی مناسب ویترین</b>
+          <p>مدل‌ها با نگاه فروشگاهی طراحی می‌شوند؛ یعنی ظاهر، تنوع و جذابیت در ویترین اهمیت دارد.</p>
+        </div>
+
+        <div class="why-card">
+          <b>تمرکز بر راحتی و فروش</b>
+          <p>در کنار ظاهر شیک، راحتی پا و کیفیت ساخت برای تکرار خرید مشتری اهمیت دارد.</p>
+        </div>
+
+        <div class="why-card">
+          <b>همکاری با فروشگاه‌ها</b>
+          <p>B&R برای فروشگاه‌های کفش، صندل و مراکز عرضه پوشاک بانوان مدل‌های قابل عرضه تولید می‌کند.</p>
+        </div>
+
+        <div class="why-card">
+          <b>شناخت بازار جنوب و ایران</b>
+          <p>محصولات با توجه به نیاز بازار داخلی، به‌خصوص مناطق گرم و مصرف‌کننده صندل، تولید می‌شوند.</p>
+        </div>
+
+        <div class="why-card">
+          <b>سابقه صادراتی</b>
+          <p>تجربه صادرات از سال ۱۳۷۶ نشان‌دهنده شناخت بازارهای منطقه‌ای و استانداردهای فروش بیرون از ایران است.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="export">
+    <div class="container">
+      <div class="export-box">
+        <div>
+          <h2>صادرات و بازار منطقه‌ای</h2>
+          <p>
+            مجموعه رنگین کمند نوین با سابقه تولیدی و صادراتی، مسیر خود را از برند RKNCO آغاز کرد و از سال ۱۴۰۱ با نام B&R ادامه داد. فعالیت صادراتی این مجموعه از سال ۱۳۷۶ آغاز شده و بازارهای منطقه‌ای بخشی از مسیر رشد برند بوده‌اند.
+          </p>
+
+          <div class="country-list">
+            <span>گرجستان</span>
+            <span>ارمنستان</span>
+            <span>آذربایجان</span>
+            <span>دبی</span>
+            <span>امارات</span>
+            <span>افغانستان</span>
+            <span>بازارهای منطقه‌ای</span>
+          </div>
+        </div>
+
+        <div class="why-card">
+          <b>مناسب همکاری فروشگاهی</b>
+          <p>
+            اگر صاحب فروشگاه کفش، صندل یا پوشاک بانوان هستید، برای دریافت مدل‌های جدید، شرایط همکاری و استعلام قیمت می‌توانید مستقیم از طریق واتساپ با B&R در ارتباط باشید.
+          </p>
+          <br>
+          <a class="btn btn-gold" href="https://wa.me/989124848078">شروع همکاری در واتساپ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-head">
+        <small>ABOUT US</small>
+        <h2>درباره B&R</h2>
+      </div>
+
+      <div class="about-box">
+        <p>
+          <strong>B&R</strong> برند تخصصی تولید صندل و دمپایی زنانه، مجلسی، طبی و دخترانه است. فعالیت رسمی این مجموعه از سال <strong>۱۳۷۱</strong> آغاز شد و با نام شرکت <strong>رنگین کمند نوین</strong> و برند <strong>RKNCO</strong> مسیر تولیدی خود را ادامه داد. در سال <strong>۱۴۰۱</strong> برند به نام <strong>B&R</strong> تغییر کرد تا با هویت تازه، ظاهر حرفه‌ای‌تر و تمرکز بیشتر بر بازار فروشگاهی فعالیت کند.
+        </p>
+        <br>
+        <p>
+          B&R با تکیه بر تجربه تولید، شناخت بازار، طراحی مناسب ویترین و سابقه صادراتی از سال <strong>۱۳۷۶</strong>، تلاش می‌کند محصولاتی تولید کند که هم برای مصرف‌کننده نهایی جذاب و راحت باشد و هم برای فروشگاه‌ها قابلیت فروش و اعتماد ایجاد کند.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <small>CONTACT</small>
+        <h2>ارتباط با B&R</h2>
+        <p>
+          برای دریافت قیمت، مشاهده مدل‌های بیشتر، شرایط همکاری فروشگاهی و ثبت سفارش، از راه‌های زیر با ما در ارتباط باشید.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="https://wa.me/989124848078">
+          <b>واتساپ</b>
+          <span>09124848078</span>
+        </a>
+
+        <a class="contact-card" href="tel:09124848078">
+          <b>تماس مستقیم</b>
+          <span>09124848078</span>
+        </a>
+
+        <a class="contact-card" href="https://instagram.com/brshoes6">
+          <b>اینستاگرام</b>
+          <span>@brshoes6</span>
+        </a>
+
+        <a class="contact-card" href="https://t.me/brshoes6">
+          <b>تلگرام</b>
+          <span>ارسال پیام</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© B&R Sandal | تولیدی تخصصی صندل زنانه، مجلسی، طبی و دخترانه</p>
+      <p>brsandal.com</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/989124848078" aria-label="WhatsApp">☎</a>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#menu a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        document.getElementById("menu").classList.remove("active");
+      });
+    });
+  </script>
 
 </body>
 </html>
